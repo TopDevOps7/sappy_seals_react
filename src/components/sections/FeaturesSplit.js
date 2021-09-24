@@ -3,6 +3,7 @@ import classNames from "classnames";
 import { SectionSplitProps } from "../../utils/SectionProps";
 import Image from "../elements/Image";
 import MediaQuery from "react-responsive";
+import { Card, Button } from "react-bootstrap";
 
 const propTypes = {
   ...SectionSplitProps.types,
@@ -53,6 +54,269 @@ const FeaturesSplit = ({
               alternate-reverse - The animation is played backwards first, then
               forwards The following example will run the animation in reverse
               direction (backwards):
+            </div>
+          </div>
+        </div>
+        <div className="cardlist">
+          <div className="row" style={{ width: "100%" }}>
+            <div className="col-md-2">
+              <div className="carditem">
+                <Card style={{ width: "15rem", padding: "10px" }}>
+                  <Card.Header>
+                    <p className="cardheaaerspan">Featured</p>
+                  </Card.Header>
+                  <Card.Body>
+                    <Image
+                      id="cardimage"
+                      src={require("./../../assets/images/bottomimage/7.d3f91701.png")}
+                    />
+                  </Card.Body>
+                </Card>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="carditem">
+                <Card style={{ width: "15rem", padding: "10px" }}>
+                  <Card.Header>
+                    <p className="cardheaaerspan">Featured</p>
+                  </Card.Header>
+                  <Card.Body>
+                    <Image
+                      id="cardimage"
+                      src={require("./../../assets/images/bottomimage/27.8506bc40.png")}
+                    />
+                  </Card.Body>
+                </Card>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="carditem">
+                <Card style={{ width: "15rem", padding: "10px" }}>
+                  <Card.Header>
+                    <p className="cardheaaerspan">Featured</p>
+                  </Card.Header>
+                  <Card.Body>
+                    <Image
+                      id="cardimage"
+                      src={require("./../../assets/images/bottomimage/110.9b5eff38.png")}
+                    />
+                  </Card.Body>
+                </Card>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="carditem">
+                <Card style={{ width: "15rem", padding: "10px" }}>
+                  <Card.Header>
+                    <p className="cardheaaerspan">Featured</p>
+                  </Card.Header>
+                  <Card.Body>
+                    <Image
+                      id="cardimage"
+                      src={require("./../../assets/images/bottomimage/111.48063bf3.png")}
+                    />
+                  </Card.Body>
+                </Card>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="carditem">
+                <Card style={{ width: "15rem", padding: "10px" }}>
+                  <Card.Header>
+                    <p className="cardheaaerspan">Featured</p>
+                  </Card.Header>
+                  <Card.Body>
+                    <Image
+                      id="cardimage"
+                      src={require("./../../assets/images/bottomimage/112.cbf21fae.png")}
+                    />
+                  </Card.Body>
+                </Card>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="carditem">
+                <Card style={{ width: "15rem", padding: "10px" }}>
+                  <Card.Header>
+                    <p className="cardheaaerspan">Featured</p>
+                  </Card.Header>
+                  <Card.Body>
+                    <Image
+                      id="cardimage"
+                      src={require("./../../assets/images/bottomimage/115.cc9c2752.png")}
+                    />
+                  </Card.Body>
+                </Card>
+              </div>
+            </div>
+          </div>
+          <div className="row" style={{ width: "100%" }}>
+            <div className="col-md-2">
+              <div className="carditem">
+                <Card style={{ width: "15rem", padding: "10px" }}>
+                  <Card.Header>
+                    <p className="cardheaaerspan">Featured</p>
+                  </Card.Header>
+                  <Card.Body>
+                    <Image
+                      id="cardimage"
+                      src={require("./../../assets/images/bottomimage/116.b5a6847c.png")}
+                    />
+                  </Card.Body>
+                </Card>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="carditem">
+                <Card style={{ width: "15rem", padding: "10px" }}>
+                  <Card.Header>
+                    <p className="cardheaaerspan">Featured</p>
+                  </Card.Header>
+                  <Card.Body>
+                    <Image
+                      id="cardimage"
+                      src={require("./../../assets/images/bottomimage/117.84abc32c.png")}
+                    />
+                  </Card.Body>
+                </Card>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="carditem">
+                <Card style={{ width: "15rem", padding: "10px" }}>
+                  <Card.Header>
+                    <p className="cardheaaerspan">Featured</p>
+                  </Card.Header>
+                  <Card.Body>
+                    <Image
+                      id="cardimage"
+                      src={require("./../../assets/images/bottomimage/118.979a956a.png")}
+                    />
+                  </Card.Body>
+                </Card>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="carditem">
+                <Card style={{ width: "15rem", padding: "10px" }}>
+                  <Card.Header>
+                    <p className="cardheaaerspan">Featured</p>
+                  </Card.Header>
+                  <Card.Body>
+                    <Image
+                      id="cardimage"
+                      src={require("./../../assets/images/bottomimage/120.7fe3914a.png")}
+                    />
+                  </Card.Body>
+                </Card>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="carditem">
+                <Card style={{ width: "15rem", padding: "10px" }}>
+                  <Card.Header>
+                    <p className="cardheaaerspan">Featured</p>
+                  </Card.Header>
+                  <Card.Body>
+                    <Image
+                      id="cardimage"
+                      src={require("./../../assets/images/bottomimage/121.9758cc01.png")}
+                    />
+                  </Card.Body>
+                </Card>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="carditem">
+                <Card style={{ width: "15rem", padding: "10px" }}>
+                  <Card.Header>
+                    <p className="cardheaaerspan">Featured</p>
+                  </Card.Header>
+                  <Card.Body>
+                    <Image
+                      id="cardimage"
+                      src={require("./../../assets/images/bottomimage/122.276018bd.png")}
+                    />
+                  </Card.Body>
+                </Card>
+              </div>
+            </div>
+          </div>
+          <div className="row" style={{ width: "100%" }}>
+            <div className="col-md-2">
+              <div className="carditem">
+                <Card style={{ width: "15rem", padding: "10px" }}>
+                  <Card.Header>
+                    <p className="cardheaaerspan">Featured</p>
+                  </Card.Header>
+                  <Card.Body>
+                    <Image
+                      id="cardimage"
+                      src={require("./../../assets/images/bottomimage/123.ef9d3448.png")}
+                    />
+                  </Card.Body>
+                </Card>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="carditem">
+                <Card style={{ width: "15rem", padding: "10px" }}>
+                  <Card.Header>
+                    <p className="cardheaaerspan">Featured</p>
+                  </Card.Header>
+                  <Card.Body>
+                    <Image
+                      id="cardimage"
+                      src={require("./../../assets/images/bottomimage/124.bd660b2c.png")}
+                    />
+                  </Card.Body>
+                </Card>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="carditem">
+                <Card style={{ width: "15rem", padding: "10px" }}>
+                  <Card.Header>
+                    <p className="cardheaaerspan">Featured</p>
+                  </Card.Header>
+                  <Card.Body>
+                    <Image
+                      id="cardimage"
+                      src={require("./../../assets/images/bottomimage/download.png")}
+                    />
+                  </Card.Body>
+                </Card>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="carditem">
+                <Card style={{ width: "15rem", padding: "10px" }}>
+                  <Card.Header>
+                    <p className="cardheaaerspan">Featured</p>
+                  </Card.Header>
+                  <Card.Body>
+                    <Image
+                      id="cardimage"
+                      src={require("./../../assets/images/bottomimage/unknown.c29f9ce8.png")}
+                    />
+                  </Card.Body>
+                </Card>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="carditem">
+                <Card style={{ width: "15rem", padding: "10px" }}>
+                  <Card.Header>
+                    <p className="cardheaaerspan">Featured</p>
+                  </Card.Header>
+                  <Card.Body>
+                    <Image
+                      id="cardimage"
+                      src={require("./../../assets/images/bottomimage/unknown.c29f9ce8.png")}
+                    />
+                  </Card.Body>
+                </Card>
+              </div>
             </div>
           </div>
         </div>
