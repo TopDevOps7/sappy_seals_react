@@ -5,7 +5,6 @@ import { SectionProps } from "../../utils/SectionProps";
 import { Button } from "react-bootstrap";
 import ProgressBar from "./progress-bar.component";
 import "react-animated-slider/build/horizontal.css";
-import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "../elements/Image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -20,24 +19,6 @@ const propTypes = {
 const defaultProps = {
   ...SectionProps.defaults,
 };
-// const params = {
-//   autoplay: {
-//     delay: 15,
-//     reverseDirection: true,
-//     waitForTransition: true,
-//   },
-//   effect: "flip",
-//   simulateTouch: false,
-//   allowTouchMove: false,
-//   grabCursor: true,
-//   autoplayDisableOnInteraction: true,
-//   loop: true,
-//   loopPreventsSlide: true,
-//   loopAdditionalSlides: 4,
-//   loopedSlides: 4,
-//   slidesPerView: 1,
-//   speed: 4000,
-// };
 
 const testData = [{ bgcolor: "#6a1b9a", completed: 100 }];
 const Hero = ({
@@ -93,9 +74,10 @@ const Hero = ({
               style={{
                 backgroundImage: `url(${background})`,
                 backgroundRepeat: "no-repeat",
-                backgroundSize: "105% 120%",
+                backgroundSize: "100% 100%",
                 backgroundPositionX: "center",
-                width: "365px",
+                width: "370px",
+                height: "320px",
                 backgroundPositionY: "center",
                 boxShadow:
                   "inset 0 0 50px hsl(0deg 0% 100% / 12%), 0 40px 50px rgb(0 0 0 / 43%)",
@@ -127,7 +109,7 @@ const Hero = ({
                   />
                 </div>
               </Slider>
-              <Image
+              {/* <Image
                 id="stone1"
                 src={require("./../../assets/images/stone/1stone.png")}
               />
@@ -146,35 +128,16 @@ const Hero = ({
               <Image
                 id="stone5"
                 src={require("./../../assets/images/stone/5stone.png")}
-              />
+              /> */}
             </div>
-            {/* <Swiper {...params}>
-              <SwiperSlide>
-                <Image
-                  id="imagefileded"
-                  src={require("./../../assets/images/1slider/2.54df04f3.png")}
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <Image
-                  id="imagefileded"
-                  src={require("./../../assets/images/1slider/3.f676d1c0.png")}
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <Image
-                  id="imagefileded"
-                  src={require("./../../assets/images/1slider/4.c602824a.png")}
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <Image
-                  id="imagefileded"
-                  src={require("./../../assets/images/1slider/5.50834565.png")}
-                />
-              </SwiperSlide>
-            </Swiper> */}
           </div>
+        </div>
+        <div className="endimage">
+          <img
+            src={require("./../../assets/images/111.png")}
+            alt="imagefield"
+            className="endimageclass"
+          />
         </div>
       </div>
     </section>

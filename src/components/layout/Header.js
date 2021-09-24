@@ -118,13 +118,7 @@ const Header = ({
               </span>
             </Button>
           </div>
-          <div className="endimage">
-            <img
-              src={require("./../../assets/images/111.png")}
-              alt="imagefield"
-              className="endimageclass"
-            />
-          </div>
+
           <Modal
             isOpen={modalIsOpen}
             onAfterOpen={afterOpenModal}
