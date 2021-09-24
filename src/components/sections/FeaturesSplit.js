@@ -58,7 +58,11 @@ const FeaturesSplit = ({
           </div>
         </div>
         <div className="cardlist">
-          <div className="row" style={{ width: "100%" }}>
+          <div className="spanheader">
+            <p className="lassppan">1/1s</p>
+            <p className="spanaraead">The exclusive collection.</p>
+          </div>
+          <div className="row" style={{ width: "100%", marginTop: "50px" }}>
             <div className="col-md-2">
               <div className="carditem">
                 <Card style={{ width: "15rem", padding: "10px" }}>
