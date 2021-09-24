@@ -52,7 +52,7 @@ const Hero = ({
     cssEase: "linear",
   };
   return (
-    <section {...props} className={outerClasses}>
+    <section {...props} className={outerClasses} id="firstpartiiso">
       <div className="main-content" id="slideeimae">
         <div className="row">
           <div className="col-md-6">
@@ -76,6 +76,7 @@ const Hero = ({
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "100% 100%",
                 backgroundPositionX: "center",
+                borderRadius: "10px",
                 width: "370px",
                 height: "320px",
                 backgroundPositionY: "center",
@@ -133,11 +134,11 @@ const Hero = ({
           </div>
         </div>
         <div className="endimage">
-          <img
+          {/* <img
             src={require("./../../assets/images/111.png")}
             alt="imagefield"
             className="endimageclass"
-          />
+          /> */}
         </div>
       </div>
     </section>

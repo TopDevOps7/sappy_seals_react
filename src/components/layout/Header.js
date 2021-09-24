@@ -110,7 +110,7 @@ const Header = ({
           )}
         >
           <Logo />
-          <div className="flex">
+          <div className="flex" id="headersocical">
             <HeaderSocial />
             <Button className="ml-32" id="buttonframe">
               <span className="font-button">
