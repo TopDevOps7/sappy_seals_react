@@ -103,42 +103,20 @@ const Header = ({
   return (
     <header {...props} className={classes}>
       <div className="container mt-16">
-        <div
-          className={classNames(
-            "site-header-inner",
-            bottomDivider && "has-bottom-divider"
-          )}
-        >
-          <Logo />
-          <div className="flex" id="headersocical">
-            <HeaderSocial />
-            <Button className="ml-32" id="buttonframe">
-              <span className="font-button">
-                <a href="https://i.gyazo.com">Connect</a>
-              </span>
-            </Button>
+        <div className="row">
+          <div className="col-md-6">
+            <Logo />
           </div>
-
-          <Modal
-            isOpen={modalIsOpen}
-            onAfterOpen={afterOpenModal}
-            onRequestClose={closeModal}
-            style={customStyles}
-            contentLabel="Modal"
-            ariaHideApp={false}
-          >
-            <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Modal</h2>
-            <div className="imagefiled">
-              <img
-                src={require("./../../assets/images/modalreset.svg")}
-                alt="imagefield"
-                id="modalimage"
-              />
+          <div className="col-md-6">
+            <div className="flex" id="headersocical">
+              <HeaderSocial />
+              <Button className="ml-32" id="buttonframe">
+                <span className="font-button">
+                  <a href="https://i.gyazo.com">Connect</a>
+                </span>
+              </Button>
             </div>
-            <div className="modalfooter">
-              <Button onClick={closeModal}>close</Button>
-            </div>
-          </Modal>
+          </div>
         </div>
       </div>
     </header>

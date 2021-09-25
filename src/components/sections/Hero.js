@@ -77,8 +77,8 @@ const Hero = ({
                 backgroundSize: "100% 100%",
                 backgroundPositionX: "center",
                 borderRadius: "10px",
-                width: "370px",
-                height: "320px",
+                width: "400px",
+                height: "350px",
                 backgroundPositionY: "center",
                 boxShadow:
                   "inset 0 0 50px hsl(0deg 0% 100% / 12%), 0 40px 50px rgb(0 0 0 / 43%)",
