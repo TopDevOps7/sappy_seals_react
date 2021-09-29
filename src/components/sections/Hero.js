@@ -11,6 +11,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import background from "../../assets/images/frame2.20b8a8ae.png";
+import { useSelector } from "react-redux";
 
 const propTypes = {
   ...SectionProps.types,
@@ -20,7 +21,6 @@ const defaultProps = {
   ...SectionProps.defaults,
 };
 
-const testData = [{ bgcolor: "#6a1b9a", completed: 100 }];
 const Hero = ({
   className,
   topOuterDivider,
@@ -31,6 +31,9 @@ const Hero = ({
   invertColor,
   ...props
 }) => {
+  const counter = useSelector((state) => state);
+  const testData = [{ bgcolor: "#6a1b9a", completed: 100 }];
+
   const outerClasses = classNames(
     "hero section center-content",
     topOuterDivider && "has-top-divider",
@@ -57,7 +60,7 @@ const Hero = ({
         <div className="row">
           <div className="col-md-6">
             <span className="sappy"> Sappy Seals </span>
-            <p className="mintfont">Minted 10000/10000</p>
+            <p className="mintfont">Minted {counter.itemsAvailable}/ 10000</p>
             <div className="progressbarfied">
               {testData.map((item, idx) => (
                 <ProgressBar key={idx} />
@@ -110,36 +113,10 @@ const Hero = ({
                   />
                 </div>
               </Slider>
-              {/* <Image
-                id="stone1"
-                src={require("./../../assets/images/stone/1stone.png")}
-              />
-              <Image
-                id="stone2"
-                src={require("./../../assets/images/stone/2stone.png")}
-              />
-              <Image
-                id="stone3"
-                src={require("./../../assets/images/stone/3stone.png")}
-              />
-              <Image
-                id="stone4"
-                src={require("./../../assets/images/stone/4stone.png")}
-              />
-              <Image
-                id="stone5"
-                src={require("./../../assets/images/stone/5stone.png")}
-              /> */}
             </div>
           </div>
         </div>
-        <div className="endimage">
-          {/* <img
-            src={require("./../../assets/images/111.png")}
-            alt="imagefield"
-            className="endimageclass"
-          /> */}
-        </div>
+        <div className="endimage"></div>
       </div>
     </section>
   );

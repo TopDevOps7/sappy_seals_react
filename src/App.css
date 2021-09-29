@@ -47,10 +47,21 @@
   max-width: 1600px !important;
   margin: 0 auto;
 }
+.btn.btn-contained {
+  background: none !important;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.75;
+  border-radius: 4px;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+}
 #headersocical {
   /* background-color: rgb(55 46 195 / 27%); */
   padding: 20px;
-  width: 310px;
+  width: 480px;
+  display: flex;
+  justify-content: center;
   margin-bottom: 15px;
   float: right;
   border-radius: 10px;
@@ -96,6 +107,8 @@
   font-size: 20px;
   font-family: fantasy;
   color: white;
+  background: none !important;
+  box-shadow: none !important;
 }
 #buttonframe {
   border-radius: 15px;
